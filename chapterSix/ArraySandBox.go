@@ -2,5 +2,7 @@ package main
 
 func main() {
 	//sumElementsInArray()
-	sumElementsInArrayWithForLoop()
+	//sumElementsInArrayWithForLoop()
+	sumOfArrayLiterals()
 }
+

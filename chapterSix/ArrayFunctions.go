@@ -34,3 +34,12 @@ func sumElementsInArrayWithForLoop(){
 	}
 	fmt.Println(total)
 }
+
+func sumOfArrayLiterals(){
+	anArray := [5]int{65, 78, 93, 100, 67}
+	total := 0
+	for _, value := range anArray{
+		total+=value
+	}
+	fmt.Println(total)
+}
