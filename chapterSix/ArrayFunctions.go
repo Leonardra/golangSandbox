@@ -51,12 +51,12 @@ func appendSlices(){
 	fmt.Println(thirdSlice)
 }
 
-func findSliceLength(){
+func findSliceLength()[]int{
 	ints := make([]int, 3, 9)
-	fmt.Println(ints)
+	return ints
 }
 
-func  smallestNumber(){
+func  smallestNumber() int{
 	numberSeries := []int{
 		48,96,86,68,
 		57,82,63,70,
@@ -70,7 +70,7 @@ func  smallestNumber(){
 			smallest = series
 		}
 	}
-	fmt.Println(smallest)
+	return smallest
 }
 
 
