@@ -4,6 +4,6 @@ func namedReturnValue(firstNumber int, secondNumber int) (sum int, product int, 
 	sum = firstNumber + secondNumber
 	difference = firstNumber -secondNumber
 	product = firstNumber * secondNumber
-
 	return
 }
+
