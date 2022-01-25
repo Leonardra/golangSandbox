@@ -10,6 +10,13 @@ func main() {
 		assignTask(firstBoy)
 		firstBoy.setFirstname("Oluwatosin")
 		fmt.Println(firstBoy)
+
+		boy := new(Boy)
+		boy.firstName = "Tosin"
+		boy.lastName = "Saba"
+		boy.accountNumber = "12345"
+		fmt.Println(boy)
+
 }
 
 func assignTask(human *Human){
