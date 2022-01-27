@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 func main() {
 		firstBoy := new(Human)
@@ -17,6 +21,18 @@ func main() {
 		boy.accountNumber = "12345"
 		fmt.Println(boy)
 
+		fmt.Println(generateRandomString())
+}
+
+func generateRandomString() string{
+	var bytesLetter = [5]byte{}
+	rand.Seed(time.Now().UnixNano())
+	for i:= 0; i < 5; i++{
+		randomNumber := rand.Intn(122 - 65) + 65
+		bytesLetter[i] = byte(randomNumber)
+	}
+	randomString := string(bytesLetter[:])
+	return randomString
 }
 
 func assignTask(human *Human){
